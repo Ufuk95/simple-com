@@ -11,3 +11,59 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.mat-mdc-dialog-surface {
+    width: 50vw !important;
+    height: 50vh !important;
+    background-color: #004d00 !important;
+    padding: 20px !important;
+}
+
+.mat-mdc-form-field-infix{
+    display: flex;
+}
+
+/* user dialog component */
+.mat-mdc-dialog-container .mat-mdc-dialog-title+.mat-mdc-dialog-content {
+    padding-top: 6px !important;
+}
+
+
+/* color of input text*/
+.mat-mdc-form-field:not(.mat-form-field-disabled) .mat-mdc-floating-label.mdc-floating-label {
+    color: wheat;
+}
+
+
+
+
+
+/* Change the border color */
+ .mdc-notched-outline__leading,
+ .mdc-notched-outline__notch,
+ .mdc-notched-outline__trailing {
+  border-color: var(--border-color) !important;
+}
+
+/* Change the border focused color */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__trailing {
+  border-color: rgb(0, 172, 246) !important;
+}
+
+/* Change the border hover color */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__trailing {
+  border-color: rgb(160, 83, 0) !important;
+}

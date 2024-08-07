@@ -1,0 +1,26 @@
+div {
+    h2 {
+        color: white;
+    }
+
+    mat-dialog-content,
+    mat-dialog-actions {
+        color: white;
+    }
+}
+
+::ng-deep {
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: white;
+    }
+
+    mat-form-field {
+
+        .mat-hint,
+        input,
+        ::placeholder,
+        .mat-form-field-label {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div>
+    <p>dialog-add-user works! (css is in styles.scss)</p>
+
+
+    <h2 mat-dialog-title>Add user</h2>
+    <mat-dialog-content>
+        <mat-form-field appearance="outline">
+            <mat-label>User hinzufügen</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon>mood</mat-icon>
+        </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Cancel</button>
+        <button mat-button [mat-dialog-close]="save()" cdkFocusInitial>Save</button>
+    </mat-dialog-actions>
+</div>
