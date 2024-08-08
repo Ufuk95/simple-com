@@ -13,8 +13,8 @@ body {
 }
 
 .mat-mdc-dialog-surface {
-    width: 50vw !important;
-    height: 50vh !important;
+    width: 70vw !important;
+    height: 70vh !important;
     background-color: #004d00 !important;
     padding: 20px !important;
 }
@@ -29,13 +29,20 @@ body {
 }
 
 
+// User Dialog color corrections
+
 /* color of input text*/
 .mat-mdc-form-field:not(.mat-form-field-disabled) .mat-mdc-floating-label.mdc-floating-label {
     color: wheat;
 }
-
-
-
+/* color of input text hover */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-floating-label {
+    color: rgb(255, 191, 0) !important;
+}
+/* color of input text focused */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label {
+    color: aqua !important;
+}
 
 
 /* Change the border color */
@@ -52,7 +59,7 @@ body {
   .mdc-notched-outline__notch,
 .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
   .mdc-notched-outline__trailing {
-  border-color: rgb(0, 172, 246) !important;
+  border-color: aqua !important;
 }
 
 /* Change the border hover color */
@@ -65,5 +72,5 @@ body {
 .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover
   .mdc-notched-outline
   .mdc-notched-outline__trailing {
-  border-color: rgb(160, 83, 0) !important;
+  border-color: rgb(255, 191, 0) !important;
 }

@@ -7,20 +7,13 @@ div {
     mat-dialog-actions {
         color: white;
     }
+
+    input {
+        color: white !important;
+    }
 }
 
-::ng-deep {
-    .mat-form-field-appearance-outline .mat-form-field-outline {
-        color: white;
-    }
 
-    mat-form-field {
-
-        .mat-hint,
-        input,
-        ::placeholder,
-        .mat-form-field-label {
-            color: white;
-        }
-    }
+.d-flex {
+    display: flex;
 }

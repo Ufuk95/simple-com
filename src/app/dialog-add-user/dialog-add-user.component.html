@@ -3,13 +3,41 @@
 
 
     <h2 mat-dialog-title>Add user</h2>
-    <mat-dialog-content>
-        <mat-form-field appearance="outline">
-            <mat-label>User hinzufügen</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon>mood</mat-icon>
-        </mat-form-field>
-    </mat-dialog-content>
+
+    <div class="d-flex">
+        <mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label class="form-field-user-text">First Name</mat-label>
+                <input matInput placeholder="1st name">
+            </mat-form-field>
+        </mat-dialog-content>
+    
+        <mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label class="form-field-user-text">Last Name</mat-label>
+                <input matInput placeholder="2nd name">
+            </mat-form-field>
+        </mat-dialog-content>
+    </div>
+   
+    <div class="d-flex">
+        <mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label class="form-field-user-text">Birthdate</mat-label>
+                <input matInput placeholder="birthdate" [matDatepicker]="picker">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </mat-dialog-content>
+    
+        <mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label class="form-field-user-text">Last Name</mat-label>
+                <input matInput placeholder="Placeholder">
+            </mat-form-field>
+        </mat-dialog-content>
+    </div>
+
     <mat-dialog-actions>
         <button mat-button (click)="onNoClick()">Cancel</button>
         <button mat-button [mat-dialog-close]="save()" cdkFocusInitial>Save</button>
