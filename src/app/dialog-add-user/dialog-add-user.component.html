@@ -7,32 +7,59 @@
     <div class="d-flex">
         <mat-dialog-content>
             <mat-form-field appearance="outline">
-                <mat-label class="form-field-user-text">First Name</mat-label>
+                <mat-label>First Name</mat-label>
                 <input matInput placeholder="1st name">
             </mat-form-field>
         </mat-dialog-content>
     
         <mat-dialog-content>
             <mat-form-field appearance="outline">
-                <mat-label class="form-field-user-text">Last Name</mat-label>
+                <mat-label>Last Name</mat-label>
                 <input matInput placeholder="2nd name">
+            </mat-form-field>
+        </mat-dialog-content>
+    </div>
+
+    <div>
+        <mat-dialog-content>
+            <mat-form-field appearance="outline" style="width: 100%">
+                <mat-label>E-mail</mat-label>
+                <input matInput placeholder="email adress">
             </mat-form-field>
         </mat-dialog-content>
     </div>
    
     <div class="d-flex">
         <mat-dialog-content>
-            <mat-form-field appearance="outline">
-                <mat-label class="form-field-user-text">Birthdate</mat-label>
+            <mat-form-field appearance="outline" style="width: 100%">
+                <mat-label>Birthdate</mat-label>
                 <input matInput placeholder="birthdate" [matDatepicker]="picker">
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
         </mat-dialog-content>
-    
+    </div>
+
+    <div>
+        <mat-dialog-content>
+            <mat-form-field appearance="outline" style="width: 100%">
+                <mat-label>Address + Nr.</mat-label>
+                <input matInput placeholder="Placeholder">
+            </mat-form-field>
+        </mat-dialog-content>
+    </div>
+
+    <div class="d-flex">
         <mat-dialog-content>
             <mat-form-field appearance="outline">
-                <mat-label class="form-field-user-text">Last Name</mat-label>
+                <mat-label>Zip Code</mat-label>
+                <input matInput placeholder="Placeholder">
+            </mat-form-field>
+        </mat-dialog-content>
+
+        <mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label>City</mat-label>
                 <input matInput placeholder="Placeholder">
             </mat-form-field>
         </mat-dialog-content>
