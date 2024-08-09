@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DialogAddUserComponent } from '../dialog-add-user/dialog-add-user.component';
+import { User } from '../../models/user.class';
 
 
 
@@ -22,6 +23,7 @@ import { DialogAddUserComponent } from '../dialog-add-user/dialog-add-user.compo
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent implements OnInit {
+  
 
   constructor(public dialog: MatDialog) {
 
@@ -37,8 +39,5 @@ export class UserComponent implements OnInit {
   openDialog() {
     const dialogRef = this.dialog.open(DialogAddUserComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
   }
 }
